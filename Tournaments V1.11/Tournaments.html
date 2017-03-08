@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html>
+<title>Tournaments</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3-theme-yellow.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script type="text/javascript" src="Image-Slider-LnR.js"></script>
+    <link rel="stylesheet" type="text/css" href="Image-Slider-LnR.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+.w3-sidenav a,.w3-sidenav h4{padding:12px;}
+.w3-navbar a{padding-top:12px !important;padding-bottom:12px !important;}
+table,th,td {border:2px black solid}
+.w3-gold {background-color:#daa520 !important}
+.champ {background-image: url(http://now-here-this.timeout.com/wp-content/uploads/2012/07/confetti2.gif)}
+.codxp {background-image: url(https://c5.staticflickr.com/9/8527/29200996420_1359c5b5cc_h.jpg)}
+.lolworld {background-image: url(https://www.rockpapershotgun.com/images/15/oct/semi1.jpg)}
+
+  table, th, td {
+    border: 1px solid black;
+    text-align: center;
+  }
+  
+  .carousel-image img {
+    animation-delay: 8s;
+  }
+</style>
+<body>
+<!-- Navbar -->
+<ul class="w3-navbar w3-theme-d2 w3-top w3-left-align w3-large" style="z-index:4;">
+  <li class="w3-opennav w3-right w3-hide-large">
+    <a class="w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+  </li>
+  <li class="w3-hide-small"><a href="#" class="w3-white">Home</a></li>
+  <li class="w3-hide-small"><a href="eSports.php" class="w3-hover-white">eSports</a></li>
+  <li class="w3-hide-small"><a href="Autosports.php" class="w3-hover-white">Autosports</a></li>
+  <li class="w3-hide-small"><a href="Individual_Sports.php" class="w3-hover-white">Individual Sports</a></li>
+  <li class="w3-hide-small"><a href="Team_Sports.php" class="w3-hover-white">Team Sports</a></li>
+  <li class="w3-hide-small"><a href="Chat_Discussions.php" class="w3-hover-white">Chatbox and Discussion Room</a></li>
+  <li class="w3-hide-small"><a href="Contact_me.html" class="w3-hover-white">Contact Me</a></li>
+  <li class="w3-right"><a class="w3-padding-16 w3-hover-white" href="#"><i class="fa fa-search"></i></a></li>
+</ul>
+
+<!-- Sidenav -->
+<nav class="w3-sidenav w3-collapse w3-theme-l2 w3-animate-left" style="z-index:3;width:250px;margin-top:0px;" id="mySidenav">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-large w3-padding-large w3-hover-yellow w3-hide-large" title="close menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-container">
+    <p class="w3-large"><b>Popular</b></p>
+    <a href="CoDChamps.php" style="font-size:12px">[{(=-=-= -->)}]CoD World League Championships</a>
+    <p class="w3-large"><b>Trending</b></p>
+    <a href="CoDChamps.php" style="font-size:12px">[{(=-=-= -->)}]CoD World League Championships</a>
+    <p class="w3-large"><b>Tournaments</b></p>
+    <a href="CoDChamps.php" style="font-size:12px">[{(=-=-= -->)}]CoD World League Championships</a>
+    <p class="w3-large"><b>Organizations</b></p>
+    [{(=-=-= -->)}]MLG
+    <br>
+    [{(=-=-= -->)}]NBA
+    <br>
+    [{(=-=-= -->)}]NHL    
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidenav on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidenav is visible -->
+<div class="w3-main" style="margin-left:250px;margin-top:50px">
+
+  <!-- <div class="w3-row w3-padding-64">
+    <div class="w3-container">
+        <p>Website Process:</p>
+        <div class="w3-progress-container">
+            <div class="w3-progressbar w3-blue" style="width:32%"></div>
+        </div>
+    </div>
+  </div> -->
+
+  <!-- <img id="imageDisplay" src="http://localhost/Tournaments/title1_1.gif">
+
+  <br>
+  <br>
+
+  <center>
+  <button onclick="document.getElementById('imageDisplay').src='http://localhost/Tournaments/title1_1.gif'">Welcome</button>
+  <button onclick="document.getElementById('imageDisplay').src='http://localhost/Tournaments/title2.gif'">LoL World Championships</button>
+  <button onclick="document.getElementById('imageDisplay').src='http://localhost/Tournaments/title3_1.jpg'">Call of Duty World Championship</button>
+
+  <button onclick="$('#imageDisplay').attr('src','http://localhost/Tournaments/title1_1.gif')">Welcome</button>
+  <button onclick="$('#imageDisplay').attr('src','http://localhost/Tournaments/title2.gif')">LoL World Championships</button>
+  <button onclick="$('#imageDisplay').attr('src','http://localhost/Tournaments/title3_1.jpg')">Call of Duty World Championship</button>
+  </center> -->
+  
+  <div id="news" class="carousel slide" data-ride="carousel" data-interval="10000">
+      <ol class="carousel-indicators">
+          <li onclick="$('#imageDisplay1').attr('src','http://localhost/Tournaments/title1_1.gif' + '?' + new Date().getTime())" data-target="#news" data-slide-to="0" class="active"></li>
+          <li onclick="$('#imageDisplay2').attr('src','http://localhost/Tournaments/title2.gif' + '?' + new Date().getTime())" data-target="#news" data-slide-to="1"></li>
+          <li onclick="$('#imageDisplay3').attr('src','http://localhost/Tournaments/title3_2.gif' + '?' + new Date().getTime())" data-target="#news" data-slide-to="2"></li>
+      </ol>
+                
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <div class="carousel-image">
+          <img id="imageDisplay1" src="http://localhost/Tournaments/title1_1.gif" onload="setTimeout('document.getElementById(\'imageDisplay1\').src=\'http://localhost/Tournaments/title1_1.gif?\'+new Date().getMilliseconds()',10000)">
+          </div>
+        </div>
+        <div class="item">
+          <div class="carousel-image">
+          <img id="imageDisplay2" src="http://localhost/Tournaments/title2.gif" onload="setTimeout('document.getElementById(\'imageDisplay2\').src=\'http://localhost/Tournaments/title2.gif?\'+new Date().getMilliseconds()',11000)">
+          </div>
+        </div>
+        <div class="item">
+          <div class="carousel-image">
+          <img id="imageDisplay3" src="http://localhost/Tournaments/title3_2.gif" onload="setTimeout('document.getElementById(\'imageDisplay3\').src=\'http://localhost/Tournaments/title3_2.gif?\'+new Date().getMilliseconds()',12000)">
+          </div>
+        </div>
+      </div>
+
+      <a class="left carousel-control" href="#news" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#news" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+  <hr>
+  <div class="w3-container" style="margin-left:250px">
+    <div class="w3-border">
+        <ul class="w3-navbar w3-theme-d1">
+          <li><a class= "w3-btn w3-theme-l1 tourneyTab w3-theme-l1" onclick="openTournament(event, 'NBA')">NBA 2016/2017 Season</a></li>
+          <li><a class= "w3-btn w3-theme-l1 tourneyTab w3-theme-l1" onclick="openTournament(event, 'NHL')">NHL 2016/2017 Season</a></li>
+        </ul>
+
+        <div id="NBA" class="w3-container competition w3-animate-opacity">
+          <div class="w3-row-padding">
+            <div class="w3-center">
+              <h3>NBA 2016/2017 Regular Season</h3>
+              <h5>October 12, 2016 - April 9, 2017</h5>
+              <br>
+              <br>
+              <h6>Standings</h6>
+            </div>
+          </div>
+
+          <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#east">Eastern Conference</a></li>
+            <li><a data-toggle="tab" href="#west">Western Conference</a></li>
+          </ul>
+
+          <div class="tab-content" style="border:1px solid black;">
+            <div id="east" class="tab-pane fade in active">
+              <div class="w3-center">
+                <h3>Eastern Conference</h3>
+              </div>
+              
+              <div class="w3-panel">
+                <ul class="nav nav-tabs">
+                  <li class="active"><a data-toggle="tab" href="#atlantic">Atlantic Division</a></li>
+                  <li><a data-toggle="tab" href="#central">Central Division</a></li>
+                  <li><a data-toggle="tab" href="#southeast">Southeast Division</a></li>
+                </ul>
+
+                <div class="tab-content" style="border:1px solid black;">
+                  <div id="atlantic" class="tab-pane fade in active">
+                    <div class="w3-center">
+                      <h3>Atlantic Division</h3>
+                    </div>
+
+                    <div class="w3-panel">
+                      <div class="w3-center">
+                        <center>
+                        <table>
+                          <thead>
+                            <tr>
+                              <th style="width:200px">Team</th>
+                              <th style="width:50px">W</th>
+                              <th style="width:50px">L</th>
+                              <th style="width:50px">PCT</th>
+                              <th style="width:50px">GB</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Toronto Raptors</td>
+                              <td>28</td>
+                              <td>14</td>
+                              <td>.667</td>
+                              <td>---</td>
+                            </tr>
+                            <tr>
+                              <td>Boston Celtics</td>
+                              <td>26</td>
+                              <td>16</td>
+                              <td>.619</td>
+                              <td>2.0</td>
+                            </tr>
+                            <tr>
+                              <td>New York Knicks</td>
+                              <td>19</td>
+                              <td>25</td>
+                              <td>.432</td>
+                              <td>10.0</td>
+                            </tr>
+                            <tr>
+                              <td>Philadelphia 76ers</td>
+                              <td>14</td>
+                              <td>26</td>
+                              <td>.350</td>
+                              <td>13.0</td>
+                            </tr>
+                            <tr>
+                              <td>Brooklyn Nets</td>
+                              <td>8</td>
+                              <td>33</td>
+                              <td>.195</td>
+                              <td>19.5</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        </center>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="central" class="tab-pane fade">
+                    <div class="w3-center">
+                      <h3>Central Division</h3>
+                    </div>
+
+                    <div class="w3-panel">
+                      <div class="w3-center">
+                        <center>
+                        <table>
+                          <thead>
+                            <tr>
+                              <th style="width:200px">Team</th>
+                              <th style="width:50px">W</th>
+                              <th style="width:50px">L</th>
+                              <th style="width:50px">PCT</th>
+                              <th style="width:50px">GB</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Cleveland Cavaliers</td>
+                              <td>30</td>
+                              <td>11</td>
+                              <td>.732</td>
+                              <td>---</td>
+                            </tr>
+                            <tr>
+                              <td>Indiana Pacers</td>
+                              <td>22</td>
+                              <td>19</td>
+                              <td>.537</td>
+                              <td>8.0</td>
+                            </tr>
+                            <tr>
+                              <td>Chicago Bulls</td>
+                              <td>21</td>
+                              <td>22</td>
+                              <td>.488</td>
+                              <td>10.0</td>
+                            </tr>
+                            <tr>
+                              <td>Milwaukee Bucks</td>
+                              <td>20</td>
+                              <td>21</td>
+                              <td>.488</td>
+                              <td>10.0</td>
+                            </tr>
+                            <tr>
+                              <td>Detroit Pistons</td>
+                              <td>20</td>
+                              <td>24</td>
+                              <td>.455</td>
+                              <td>11.5</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        </center>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="southeast" class="tab-pane fade">
+                    <div class="w3-center">
+                      <h3>Southeast Division</h3>
+                    </div>
+
+                    <div class="w3-panel">
+                      <div class="w3-center">
+                        <center>
+                        <table>
+                          <thead>
+                            <tr>
+                              <th style="width:200px">Team</th>
+                              <th style="width:50px">W</th>
+                              <th style="width:50px">L</th>
+                              <th style="width:50px">PCT</th>
+                              <th style="width:50px">GB</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Atlanta Hawks</td>
+                              <td>24</td>
+                              <td>18</td>
+                              <td>.571</td>
+                              <td>---</td>
+                            </tr>
+                            <tr>
+                              <td>Washington Wizards</td>
+                              <td>23</td>
+                              <td>19</td>
+                              <td>.548</td>
+                              <td>1.0</td>
+                            </tr>
+                            <tr>
+                              <td>Charlotte Hornets</td>
+                              <td>21</td>
+                              <td>21</td>
+                              <td>.500</td>
+                              <td>3.0</td>
+                            </tr>
+                            <tr>
+                              <td>Orlando Magic</td>
+                              <td>17</td>
+                              <td>27</td>
+                              <td>.386</td>
+                              <td>8.0</td>
+                            </tr>
+                            <tr>
+                              <td>Miami Heat</td>
+                              <td>13</td>
+                              <td>30</td>
+                              <td>.302</td>
+                              <td>11.5</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        </center>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="west" class="tab-pane fade">
+              <div class="w3-center">
+                <h3>Western Conference</h3>
+              </div>
+
+              <div class="w3-panel">
+                <ul class="nav nav-tabs">
+                  <li class="active"><a data-toggle="tab" href="#northwest">Northwest Division</a></li>
+                  <li><a data-toggle="tab" href="#pacific">Pacific Division</a></li>
+                  <li><a data-toggle="tab" href="#southwest">Southwest Division</a></li>
+                </ul>
+
+                <div class="tab-content" style="border:1px solid black;">
+                  <div id="northwest" class="tab-pane fade in active">
+                    <div class="w3-center">
+                      <h3>Northwest Division</h3>
+                    </div>
+
+                    <div class="w3-panel">
+                      <div class="w3-center">
+                        <center>
+                        <table>
+                          <thead>
+                            <tr>
+                              <th style="width:200px">Team</th>
+                              <th style="width:50px">W</th>
+                              <th style="width:50px">L</th>
+                              <th style="width:50px">PCT</th>
+                              <th style="width:50px">GB</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Utah Jazz</td>
+                              <td>27</td>
+                              <td>16</td>
+                              <td>.628</td>
+                              <td>---</td>
+                            </tr>
+                            <tr>
+                              <td>Oklahoma City Thunder</td>
+                              <td>25</td>
+                              <td>19</td>
+                              <td>.568</td>
+                              <td>2.5</td>
+                            </tr>
+                            <tr>
+                              <td>Denver Nuggets</td>
+                              <td>17</td>
+                              <td>24</td>
+                              <td>.415</td>
+                              <td>9.0</td>
+                            </tr>
+                            <tr>
+                              <td>Portland Trail Blazer</td>
+                              <td>18</td>
+                              <td>26</td>
+                              <td>.409</td>
+                              <td>9.5</td>
+                            </tr>
+                            <tr>
+                              <td>Minnesota Timberwolves</td>
+                              <td>15</td>
+                              <td>28</td>
+                              <td>.349</td>
+                              <td>12.0</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        </center>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="pacific" class="tab-pane fade">
+                    <div class="w3-center">
+                      <h3>Pacific Division</h3>
+                    </div>
+
+                    <div class="w3-panel">
+                      <div class="w3-center">
+                        <center>
+                        <table>
+                          <thead>
+                            <tr>
+                              <th style="width:200px">Team</th>
+                              <th style="width:50px">W</th>
+                              <th style="width:50px">L</th>
+                              <th style="width:50px">PCT</th>
+                              <th style="width:50px">GB</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Golden State Warriors</td>
+                              <td>36</td>
+                              <td>6</td>
+                              <td>.857</td>
+                              <td>---</td>
+                            </tr>
+                            <tr>
+                              <td>Los Angeles Clippers</td>
+                              <td>29</td>
+                              <td>15</td>
+                              <td>.659</td>
+                              <td>8.0</td>
+                            </tr>
+                            <tr>
+                              <td>Sacramento Kings</td>
+                              <td>16</td>
+                              <td>25</td>
+                              <td>.390</td>
+                              <td>19.5</td>
+                            </tr>
+                            <tr>
+                              <td>Los Angeles Lakers</td>
+                              <td>15</td>
+                              <td>31</td>
+                              <td>.326</td>
+                              <td>23.0</td>
+                            </tr>
+                            <tr>
+                              <td>Phoenix Suns</td>
+                              <td>13</td>
+                              <td>29</td>
+                              <td>.310</td>
+                              <td>23.0</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        </center>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="southwest" class="tab-pane fade">
+                    <div class="w3-center">
+                      <h3>Southwest Division</h3>
+                    </div>
+
+                    <div class="w3-panel">
+                      <div class="w3-center">
+                        <center>
+                        <table>
+                          <thead>
+                            <tr>
+                              <th style="width:200px">Team</th>
+                              <th style="width:50px">W</th>
+                              <th style="width:50px">L</th>
+                              <th style="width:50px">PCT</th>
+                              <th style="width:50px">GB</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>San Antonio Spurs</td>
+                              <td>33</td>
+                              <td>9</td>
+                              <td>.786</td>
+                              <td>---</td>
+                            </tr>
+                            <tr>
+                              <td>Houston Rockets</td>
+                              <td>33</td>
+                              <td>12</td>
+                              <td>.733</td>
+                              <td>1.5</td>
+                            </tr>
+                            <tr>
+                              <td>Memphis Grizzlies</td>
+                              <td>25</td>
+                              <td>19</td>
+                              <td>.568</td>
+                              <td>9.0</td>
+                            </tr>
+                            <tr>
+                              <td>New Orlean Pelicans</td>
+                              <td>17</td>
+                              <td>26</td>
+                              <td>.395</td>
+                              <td>16.5</td>
+                            </tr>
+                            <tr>
+                              <td>Dallas Mavericks</td>
+                              <td>14</td>
+                              <td>28</td>
+                              <td>.333</td>
+                              <td>19.0</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        </center>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w3-row-padding">
+            <div class="w3-center w3-container">
+              <a href="#">Infopage</a>
+              <a href="#">Scores</a>
+              <a href="#">Schedule</a>
+              <a href="#">Results</a>
+              <a href="#">Standings</a>
+              <a href="#">Stats</a>
+              <a href="#">Transactions</a>
+            </div>
+          </div>
+
+          <br>
+          
+        </div>
+
+        <div id="NHL" class="w3-container competition w3-animate-opacity">
+          <div class="w3-row-padding">
+            <div class="w3-center">
+              <h3>NHL 2016/2017 Regular Season</h3>
+              <h5>October 25, 2016 - April 12, 2017</h5>
+              <br>
+              <br>
+              <h6>Standings</h6>
+            </div>
+          </div>
+
+          <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#east2">Eastern Conference</a></li>
+            <li><a data-toggle="tab" href="#west2">Western Conference</a></li>
+          </ul>
+
+          <div class="tab-content" style="border:1px solid black;">
+            <div id="east2" class="tab-pane fade in active">
+              <div class="w3-center">
+                <h3>Eastern Conference</h3>
+              </div>
+              
+              <div class="w3-panel">
+                <ul class="nav nav-tabs">
+                  <li class="active"><a data-toggle="tab" href="#metropolitan">Top 3 Metropolitan Division</a></li>
+                  <li><a data-toggle="tab" href="#atlantic2">Top 3 Atlantic Division</a></li>
+                  <li><a data-toggle="tab" href="#eastwildcard">Eastern Conference Wildcard</a></li>
+                </ul>
+
+                <div class="tab-content" style="border:1px solid black;">
+                  <div id="metropolitan" class="tab-pane fade in active">
+                    <div class="w3-center">
+                      <h3>Metropolitan Division</h3>
+                    </div>
+
+                    <div class="w3-panel">
+                      <div class="w3-center">
+                        <center>
+                        <table>
+                          <thead>
+                            <tr>
+                              <th style="width:200px">Team</th>
+                              <th style="width:50px">W</th>
+                              <th style="width:50px">L</th>
+                              <th style="width:50px">OTL</th>
+                              <th style="width:50px">GF</th>
+                              <th style="width:50px">GA</th>
+                              <th style="width:50px">Pts</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Washington Capitals</td>
+                              <td>30</td>
+                              <td>9</td>
+                              <td>6</td>
+                              <td>145</td>
+                              <td>97</td>
+                              <td>66</td>
+                            </tr>
+                            <tr>
+                              <td>Columbus Blue Jackets</td>
+                              <td>30</td>
+                              <td>10</td>
+                              <td>4</td>
+                              <td>145</td>
+                              <td>98</td>
+                              <td>64</td>
+                            </tr>
+                            <tr>
+                              <td>Pittsburgh Penguins</td>
+                              <td>28</td>
+                              <td>11</td>
+                              <td>5</td>
+                              <td>157</td>
+                              <td>132</td>
+                              <td>61</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        </center>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="atlantic2" class="tab-pane fade">
+                    <div class="w3-center">
+                      <h3>Atlantic Division</h3>
+                    </div>
+
+                    <div class="w3-panel">
+                      <div class="w3-center">
+                        <center>
+                        <table>
+                          <thead>
+                            <tr>
+                              <th style="width:200px">Team</th>
+                              <th style="width:50px">W</th>
+                              <th style="width:50px">L</th>
+                              <th style="width:50px">OTL</th>
+                              <th style="width:50px">GF</th>
+                              <th style="width:50px">GA</th>
+                              <th style="width:50px">Pts</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Montreal Canadiens</td>
+                              <td>27</td>
+                              <td>13</td>
+                              <td>6</td>
+                              <td>139</td>
+                              <td>117</td>
+                              <td>60</td>
+                            </tr>
+                            <tr>
+                              <td>Ottawa Senators</td>
+                              <td>24</td>
+                              <td>15</td>
+                              <td>4</td>
+                              <td>113</td>
+                              <td>111</td>
+                              <td>52</td>
+                            </tr>
+                            <tr>
+                              <td>Boston Bruins</td>
+                              <td>23</td>
+                              <td>19</td>
+                              <td>6</td>
+                              <td>122</td>
+                              <td>123</td>
+                              <td>52</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        </center>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="eastwildcard" class="tab-pane fade">
+                    <div class="w3-center">
+                      <h3>Eastern Conference Wildcard</h3>
+                    </div>
+
+                    <div class="w3-panel">
+                      <div class="w3-center">
+                        <center>
+                        <table>
+                          <thead>
+                            <tr>
+                              <th style="width:200px">Team</th>
+                              <th style="width:50px">W</th>
+                              <th style="width:50px">L</th>
+                              <th style="width:50px">OTL</th>
+                              <th style="width:50px">GF</th>
+                              <th style="width:50px">GA</th>
+                              <th style="width:50px">Pts</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>New York Rangers</td>
+                              <td>29</td>
+                              <td>16</td>
+                              <td>1</td>
+                              <td>163</td>
+                              <td>125</td>
+                              <td>59</td>
+                            </tr>
+                            <tr>
+                              <td>Toronto Maple Leafs</td>
+                              <td>21</td>
+                              <td>14</td>
+                              <td>9</td>
+                              <td>136</td>
+                              <td>131</td>
+                              <td>51</td>
+                            </tr>
+                            <tr>
+                              <td>Philadelphia Flyers</td>
+                              <td>22</td>
+                              <td>19</td>
+                              <td>6</td>
+                              <td>133</td>
+                              <td>152</td>
+                              <td>50</td>
+                            </tr>
+                            <tr>
+                              <td>Carolina Hurricanes</td>
+                              <td>21</td>
+                              <td>18</td>
+                              <td>7</td>
+                              <td>125</td>
+                              <td>131</td>
+                              <td>49</td>
+                            </tr>
+                            <tr>
+                              <td>Florida Panthers</td>
+                              <td>20</td>
+                              <td>19</td>
+                              <td>9</td>
+                              <td>112</td>
+                              <td>133</td>
+                              <td>49</td>
+                            </tr>
+                            <tr>
+                              <td>New Jersey Devils</td>
+                              <td>20</td>
+                              <td>10</td>
+                              <td>9</td>
+                              <td>110</td>
+                              <td>136</td>
+                              <td>49</td>
+                            </tr>
+                            <tr>
+                              <td>Buffalo Sabres</td>
+                              <td>19</td>
+                              <td>18</td>
+                              <td>9</td>
+                              <td>110</td>
+                              <td>128</td>
+                              <td>47</td>
+                            </tr>
+                            <tr>
+                              <td>Detroit Red Wings</td>
+                              <td>20</td>
+                              <td>19</td>
+                              <td>7</td>
+                              <td>120</td>
+                              <td>135</td>
+                              <td>27</td>
+                            </tr>
+                            <tr>
+                              <td>Tampa Bay Lightning</td>
+                              <td>21</td>
+                              <td>21</td>
+                              <td>5</td>
+                              <td>127</td>
+                              <td>137</td>
+                              <td>47</td>
+                            </tr>
+                            <tr>
+                              <td>New York Islanders</td>
+                              <td>19</td>
+                              <td>17</td>
+                              <td>8</td>
+                              <td>127</td>
+                              <td>130</td>
+                              <td>46</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        </center>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="west2" class="tab-pane fade">
+              <div class="w3-center">
+                <h3>Western Conference</h3>
+              </div>
+
+              <div class="w3-panel">
+                <ul class="nav nav-tabs">
+                  <li class="active"><a data-toggle="tab" href="#central2">Top 3 Central Division</a></li>
+                  <li><a data-toggle="tab" href="#pacific2">Top 3 Pacific Division</a></li>
+                  <li><a data-toggle="tab" href="#westwildcard">Western Conference Wildcard</a></li>
+                </ul>
+
+                <div class="tab-content" style="border:1px solid black;">
+                  <div id="central2" class="tab-pane fade in active">
+                    <div class="w3-center">
+                      <h3>Central Division</h3>
+                    </div>
+
+                    <div class="w3-panel">
+                      <div class="w3-center">
+                        <center>
+                        <table>
+                          <thead>
+                            <tr>
+                              <th style="width:200px">Team</th>
+                              <th style="width:50px">W</th>
+                              <th style="width:50px">L</th>
+                              <th style="width:50px">OTL</th>
+                              <th style="width:50px">GF</th>
+                              <th style="width:50px">GA</th>
+                              <th style="width:50px">Pts</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Minnesota Wild</td>
+                              <td>30</td>
+                              <td>10</td>
+                              <td>5</td>
+                              <td>150</td>
+                              <td>102</td>
+                              <td>65</td>
+                            </tr>
+                            <tr>
+                              <td>Chicago Blackhawks</td>
+                              <td>29</td>
+                              <td>14</td>
+                              <td>5</td>
+                              <td>133</td>
+                              <td>120</td>
+                              <td>63</td>
+                            </tr>
+                            <tr>
+                              <td>Nashville Predators</td>
+                              <td>22</td>
+                              <td>17</td>
+                              <td>7</td>
+                              <td>126</td>
+                              <td>120</td>
+                              <td>51</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        </center>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="pacific2" class="tab-pane fade">
+                    <div class="w3-center">
+                      <h3>Pacific Division</h3>
+                    </div>
+
+                    <div class="w3-panel">
+                      <div class="w3-center">
+                        <center>
+                        <table>
+                          <thead>
+                            <tr>
+                              <th style="width:200px">Team</th>
+                              <th style="width:50px">W</th>
+                              <th style="width:50px">L</th>
+                              <th style="width:50px">OTL</th>
+                              <th style="width:50px">GF</th>
+                              <th style="width:50px">GA</th>
+                              <th style="width:50px">Pts</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Anaheim Ducks</td>
+                              <td>26</td>
+                              <td>14</td>
+                              <td>9</td>
+                              <td>130</td>
+                              <td>123</td>
+                              <td>61</td>
+                            </tr>
+                            <tr>
+                              <td>San Jose Sharks</td>
+                              <td>29</td>
+                              <td>16</td>
+                              <td>2</td>
+                              <td>125</td>
+                              <td>107</td>
+                              <td>60</td>
+                            </tr>
+                            <tr>
+                              <td>Edmonto Oilers</td>
+                              <td>26</td>
+                              <td>15</td>
+                              <td>8</td>
+                              <td>144</td>
+                              <td>131</td>
+                              <td>60</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        </center>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="westwildcard" class="tab-pane fade">
+                    <div class="w3-center">
+                      <h3>Western Conference Wildcard</h3>
+                    </div>
+
+                    <div class="w3-panel">
+                      <div class="w3-center">
+                        <center>
+                        <table>
+                          <thead>
+                            <tr>
+                              <th style="width:200px">Team</th>
+                              <th style="width:50px">W</th>
+                              <th style="width:50px">L</th>
+                              <th style="width:50px">OTL</th>
+                              <th style="width:50px">GF</th>
+                              <th style="width:50px">GA</th>
+                              <th style="width:50px">Pts</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>ST. Louis Blues</td>
+                              <td>23</td>
+                              <td>19</td>
+                              <td>5</td>
+                              <td>134</td>
+                              <td>147</td>
+                              <td>51</td>
+                            </tr>
+                            <tr>
+                              <td>Calgary Flames</td>
+                              <td>24</td>
+                              <td>22</td>
+                              <td>3</td>
+                              <td>130</td>
+                              <td>138</td>
+                              <td>51</td>
+                            </tr>
+                            <tr>
+                              <td>Vancouver Canucks</td>
+                              <td>22</td>
+                              <td>19</td>
+                              <td>6</td>
+                              <td>114</td>
+                              <td>131</td>
+                              <td>50</td>
+                            </tr>
+                            <tr>
+                              <td>Los Angeles Kings</td>
+                              <td>22</td>
+                              <td>20</td>
+                              <td>4</td>
+                              <td>115</td>
+                              <td>117</td>
+                              <td>48</td>
+                            </tr>
+                            <tr>
+                              <td>Winnipeg Jets</td>
+                              <td>22</td>
+                              <td>23</td>
+                              <td>4</td>
+                              <td>140</td>
+                              <td>151</td>
+                              <td>48</td>
+                            </tr>
+                            <tr>
+                              <td>Dallas Stars</td>
+                              <td>19</td>
+                              <td>20</td>
+                              <td>9</td>
+                              <td>129</td>
+                              <td>151</td>
+                              <td>47</td>
+                            </tr>
+                            <tr>
+                              <td>Arizona Coyotes</td>
+                              <td>14</td>
+                              <td>26</td>
+                              <td>6</td>
+                              <td>102</td>
+                              <td>150</td>
+                              <td>34</td>
+                            </tr>
+                            <tr>
+                              <td>Colorado Avalanche</td>
+                              <td>13</td>
+                              <td>29</td>
+                              <td>2</td>
+                              <td>89</td>
+                              <td>148</td>
+                              <td>28</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        </center>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w3-row-padding">
+            <div class="w3-center w3-container">
+              <a href="#">Infopage</a>
+              <a href="#">Scores</a>
+              <a href="#">Schedule</a>
+              <a href="#">Results</a>
+              <a href="#">Standings</a>
+              <a href="#">Stats</a>
+              <a href="#">Transactions</a>
+            </div>
+          </div>
+
+          <br>
+          
+        </div>
+      </div>
+  </div>
+
+  <br>
+  <br>
+
+  <footer id="myFooter">
+    <div class="w3-container w3-white w3-padding-10">
+      <center>
+        <h4>Latest News</h4>
+        <marquee width="25%" behavior="scroll" direction="left">
+          <p>
+            EnVyUs wins Call of Duty XP 2016
+            [{(=-=-=))}]
+            Wings Gaming wins Dota2 The International 2016
+            [{(=-=-=))}]
+            SK Telecom T1 wins LoL World Championships 2016
+          </p>
+        </marquee>
+      </center>
+    </div>
+
+    <div class="w3-container w3-green">
+      <p></p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+  // Get the Sidenav
+  var mySidenav = document.getElementById("mySidenav");
+
+  // Get the DIV with overlay effect
+  var overlayBg = document.getElementById("myOverlay");
+
+  // Toggle between showing and hiding the sidenav, and add overlay effect
+  function w3_open() {
+      if (mySidenav.style.display === 'block') {
+          mySidenav.style.display = 'none';
+          overlayBg.style.display = "none";
+      } else {
+          mySidenav.style.display = 'block';
+          overlayBg.style.display = "block";
+      }
+  }
+
+  // Close the sidenav with the close button
+  function w3_close() {
+      mySidenav.style.display = "none";
+      overlayBg.style.display = "none";
+  }
+
+  // Get tournament information
+  function openTournament(evt, tournament) {
+    var i;
+    var x = document.getElementsByClassName("competition");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    var activebtn = document.getElementsByClassName("tourneyTab");
+    for (i = 0; i < x.length; i++) {
+        activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
+    }
+    document.getElementById(tournament).style.display = "block";
+    evt.currentTarget.className += " w3-deep-purple";
+  }
+
+  var mybtn = document.getElementsByClassName("tourneyTab")[0];
+  mybtn.click();
+
+    function slider(){		
+            animate({
+                delay:25,
+                duration: 4000,
+                delta:function(p){return Math.max(0, -1 + 2 * p)},
+                step:function(delta){
+                        ul.style.left = '-' + parseInt(current * image_width + delta * image_width) + 'px';
+                    },
+                callback:function(){
+                    current++;
+                    if(current < li_number-1){
+                        slider();
+                    }
+                    else{
+                        var left = (li_number - 1) * image_width;					
+                        setTimeout(function(){goBack(left)},2000); 				
+                        setTimeout(slider, 4000);
+                    }
+                }
+            });
+    }
+    function goBack(left_limits){
+        current = 0;	
+        setInterval(function(){
+            if(left_limits >= 0){
+                ul.style.left = '-' + parseInt(left_limits) + 'px';
+                left_limits -= image_width / 10;
+            }	
+        }, 17);
+    }
+    function animate(opts){
+        var start = new Date;
+        var id = setInterval(function(){
+            var timePassed = new Date - start;
+            var progress = timePassed / opts.duration
+            if(progress > 1){
+                progress = 1;
+            }
+            var delta = opts.delta(progress);
+            opts.step(delta);
+            if (progress == 1){
+                clearInterval(id);
+                opts.callback();
+            }
+        }, opts.dalay || 17);
+    }
+    window.onload = init;
+</script>
+
+</body>
+</html>
